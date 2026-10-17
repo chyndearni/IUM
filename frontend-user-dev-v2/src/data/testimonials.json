@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Ahmad Rahman",
+    "role": "Web Developer",
+    "company": "PT Tech Inklusif",
+    "content": "Platform ini sangat membantu saya sebagai penyandang tunanetra untuk menemukan pekerjaan yang sesuai. Interface yang accessibility-friendly membuat saya mudah navigasi.",
+    "avatar": "AR"
+  },
+  {
+    "id": 2,
+    "name": "Sari Indah",
+    "role": "Data Analyst",
+    "company": "CV Data Solutions",
+    "content": "Proses pendaftaran dan pencarian kerja sangat mudah. Tim support juga sangat responsif membantu ketika saya mengalami kesulitan.",
+    "avatar": "SI"
+  },
+  {
+    "id": 3,
+    "name": "Budi Santoso",
+    "role": "Customer Service",
+    "company": "PT Layanan Prima",
+    "content": "Fitur filter berdasarkan jenis disabilitas sangat membantu. Saya bisa fokus pada lowongan yang benar-benar ramah untuk tunarungu seperti saya.",
+    "avatar": "BS"
+  }
+]

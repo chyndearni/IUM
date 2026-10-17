@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "PT Bank Central Asia Tbk",
+    "location": "Jakarta Selatan",
+    "logo": "BCA"
+  },
+  {
+    "id": 2,
+    "name": "PT Telkom Indonesia Tbk",
+    "location": "Bandung",
+    "logo": "TLKM"
+  },
+  {
+    "id": 3,
+    "name": "PT Pertamina (Persero)",
+    "location": "Surabaya",
+    "logo": "PERTA"
+  },
+  {
+    "id": 4,
+    "name": "PT Unilever Indonesia Tbk",
+    "location": "Yogyakarta",
+    "logo": "UNVR"
+  },
+  {
+    "id": 5,
+    "name": "PT Bank Mandiri Tbk",
+    "location": "Medan",
+    "logo": "BMRI"
+  },
+  {
+    "id": 6,
+    "name": "PT Astra International Tbk",
+    "location": "Bali",
+    "logo": "ASII"
+  }
+]

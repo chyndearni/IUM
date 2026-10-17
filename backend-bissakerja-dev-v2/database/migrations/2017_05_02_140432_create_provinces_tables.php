@@ -1,0 +1,38 @@
+<?php
+
+/*
+ * This file is part of the IndoRegion package.
+ *
+ * (c) Azis Hapidin <azishapidin.com | azishapidin@gmail.com>
+ *
+ */
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateProvincesTables extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('provinces', function (Blueprint $table) {
+            $table->char('id', 2)->index()->unique();
+            $table->string('name');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::drop('provinces');
+    }
+}

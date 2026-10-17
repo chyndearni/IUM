@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Frontend Developer",
+    "company": "Tech Innovate",
+    "location": "Jakarta",
+    "salary": "Rp 8,000,000 - 12,000,000",
+    "type": "Full-time",
+    "posted": "2 hari yang lalu",
+    "description": "Mencari frontend developer berpengalaman dengan React dan TypeScript untuk bergabung dengan tim kami.",
+    "requirements": ["React", "TypeScript", "Tailwind CSS"],
+    "logo": "https://via.placeholder.com/48x48/3B82F6/FFFFFF?text=TI"
+  },
+  {
+    "id": 2,
+    "title": "Backend Developer",
+    "company": "DataFlow Solutions",
+    "location": "Surabaya",
+    "salary": "Rp 9,000,000 - 15,000,000",
+    "type": "Full-time",
+    "posted": "1 hari yang lalu",
+    "description": "Bergabunglah dengan tim backend kami untuk mengembangkan sistem yang scalable dan robust.",
+    "requirements": ["Node.js", "PostgreSQL", "Docker"],
+    "logo": "https://via.placeholder.com/48x48/10B981/FFFFFF?text=DS"
+  },
+  {
+    "id": 3,
+    "title": "UI/UX Designer",
+    "company": "Creative Studio",
+    "location": "Bandung",
+    "salary": "Rp 6,000,000 - 10,000,000",
+    "type": "Full-time",
+    "posted": "3 hari yang lalu",
+    "description": "Kami mencari UI/UX designer yang kreatif untuk menciptakan pengalaman pengguna yang luar biasa.",
+    "requirements": ["Figma", "Adobe XD", "User Research"],
+    "logo": "https://via.placeholder.com/48x48/F59E0B/FFFFFF?text=CS"
+  },
+  {
+    "id": 4,
+    "title": "DevOps Engineer",
+    "company": "CloudTech",
+    "location": "Yogyakarta",
+    "salary": "Rp 10,000,000 - 16,000,000",
+    "type": "Full-time",
+    "posted": "4 hari yang lalu",
+    "description": "Bergabunglah dengan tim DevOps kami untuk mengelola infrastruktur cloud dan deployment.",
+    "requirements": ["AWS", "Kubernetes", "Terraform"],
+    "logo": "https://via.placeholder.com/48x48/8B5CF6/FFFFFF?text=CT"
+  },
+  {
+    "id": 5,
+    "title": "Product Manager",
+    "company": "StartupHub",
+    "location": "Jakarta",
+    "salary": "Rp 12,000,000 - 20,000,000",
+    "type": "Full-time",
+    "posted": "5 hari yang lalu",
+    "description": "Mencari product manager berpengalaman untuk memimpin pengembangan produk digital.",
+    "requirements": ["Product Strategy", "Agile", "Analytics"],
+    "logo": "https://via.placeholder.com/48x48/EF4444/FFFFFF?text=SH"
+  },
+  {
+    "id": 6,
+    "title": "Mobile Developer",
+    "company": "AppWorks",
+    "location": "Medan",
+    "salary": "Rp 7,000,000 - 13,000,000",
+    "type": "Full-time",
+    "posted": "1 minggu yang lalu",
+    "description": "Bergabunglah dengan tim mobile development kami untuk menciptakan aplikasi mobile yang inovatif.",
+    "requirements": ["React Native", "Flutter", "Firebase"],
+    "logo": "https://via.placeholder.com/48x48/06B6D4/FFFFFF?text=AW"
+  }
+]

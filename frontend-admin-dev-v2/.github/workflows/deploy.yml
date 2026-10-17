@@ -1,0 +1,68 @@
+name: Deploy Frontend Admin to VPS
+
+on:
+  push:
+    branches:
+      - main
+      - staging
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Debug file structure
+        run: ls -R
+
+      - name: Copy source file to VPS
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          password: ${{ secrets.VPS_PASSWORD }}
+          port: 22
+          source: "public,src,package.json,package-lock.json,next.config.ts,tsconfig.json,postcss.config.js"
+          target: /www/wwwroot/frontend-admin
+
+      - name: Build dan Running...
+        uses: garygrossgarten/github-action-ssh@release
+
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          password: ${{ secrets.VPS_PASSWORD }}
+          command: |
+            export PATH=$PATH:/www/server/nvm/versions/node/v22.18.0/bin
+            cd /www/wwwroot/frontend-admin
+            echo "Sekarang ada di: $(pwd)"
+
+            echo "Membuat .env.production..."
+            cat > .env.production <<EOL
+            NEXT_PUBLIC_BASE_URL=${{ secrets.NEXT_PUBLIC_BASE_URL }}
+            NEXT_PUBLIC_BISSA_KERJA_API_URL=${{ secrets.NEXT_PUBLIC_BISSA_KERJA_API_URL }}
+            EOL
+
+            echo "Menghapus folder .next lama..."
+            rm -rf .next
+
+             echo "Menghapus folder .next lama..."
+            rm -rf node_modules
+
+            echo "Install dependency (production)..."
+            npm install --production
+
+            echo "Build Next.js..."
+            npm run build
+
+            echo "Stop PM2 lama..."
+            pm2 stop frontend-admin || true
+            pm2 delete frontend-admin || true
+
+            echo "Start ulang PM2..."
+            pm2 start npm --name "frontend-admin" -- run start
+            pm2 save
+
+            echo "Deploy selesai!"

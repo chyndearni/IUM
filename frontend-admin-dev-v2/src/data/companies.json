@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "PT Tech Inklusif",
+    "location": "Jakarta Selatan",
+    "logo": "TI"
+  },
+  {
+    "id": 2,
+    "name": "CV Data Solutions",
+    "location": "Bandung",
+    "logo": "DS"
+  },
+  {
+    "id": 3,
+    "name": "PT Layanan Prima",
+    "location": "Surabaya",
+    "logo": "LP"
+  },
+  {
+    "id": 4,
+    "name": "Studio Kreatif",
+    "location": "Yogyakarta",
+    "logo": "SK"
+  },
+  {
+    "id": 5,
+    "name": "PT Keuangan Sejahtera",
+    "location": "Medan",
+    "logo": "KS"
+  },
+  {
+    "id": 6,
+    "name": "Media Digital",
+    "location": "Bali",
+    "logo": "MD"
+  }
+]
